@@ -1,1 +1,39 @@
-<p>home works!</p>
+<div class="filters">
+    <mat-form-field>
+    <mat-label>Categorias</mat-label>
+<mat-select
+    panelClass="sort-select"
+    [(ngModel)]="sort"
+>
+<mat-option value="name">Nome</mat-option>
+<mat-option value="-released">Lançamento</mat-option>
+<mat-option value="-added">Adicionado</mat-option>
+<mat-option value="-created">Origem</mat-option>
+<mat-option value="-updated">Atualizado</mat-option>
+<mat-option value="-rating">Avaliação</mat-option>
+<mat-option value="metacriic">Criticas</mat-option>
+</mat-select>
+</mat-form-field>
+</div>
+
+<div class="games">
+    <div class="game">
+        <div class="game-thumb-container">
+<img
+            src="https://media.rawg.io/media/resize/1920/-/screenshots/6c9/6c9d036518f78895ddf552d2cb7421d6.jpg"
+            alt="thumbnail"
+            class="game-thumbnail"
+/>
+        </div>
+<div class="game-description">
+<p class="game-name">Nome</p>
+<div class="game-platforms">
+<img 
+class="game-platform"
+src="https://media.rawg.io/media/resize/1920/-/screenshots/384/3848066eb62f7fcc96534768c904e158.jpg"
+alt="slug"
+/>
+</div>
+</div>
+</div>
+</div>
