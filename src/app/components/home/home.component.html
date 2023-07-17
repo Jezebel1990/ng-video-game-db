@@ -3,14 +3,16 @@
     <mat-label>Categorias</mat-label>
 <mat-select
     panelClass="sort-select"
-    [(ngModel)]="sort">
+    [(ngModel)]="sort"
+    (selectionChange)="searchGames(sort)"
+    >
     <mat-option value="name">Nome</mat-option>
     <mat-option value="-released">Lançamento</mat-option>
     <mat-option value="-added">Adicionado</mat-option>
     <mat-option value="-created">Origem</mat-option>
     <mat-option value="-updated">Atualizado</mat-option>
     <mat-option value="-rating">Avaliação</mat-option>
-    <mat-option value="metacriic">Criticas</mat-option>
+    <mat-option value="metacritic">Criticas</mat-option>
     </mat-select>
 </mat-form-field>
 </div>
@@ -25,7 +27,7 @@
             alt="thumbnail"
             class="game-thumbnail"
            />
-<p *ngIf="!game.background_image">Nenhuma imagem</p>
+<p *ngIf="!game.background_image">Imagem não disponível</p>
 </div>
     <div class="game-description">
     <p class="game-name">{{ game.name }}</p>
