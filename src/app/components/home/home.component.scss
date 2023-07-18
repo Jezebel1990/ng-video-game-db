@@ -44,7 +44,7 @@
     height: 330px;
     overflow: hidden;
     border-radius: 5px;
-    background-color: #202020;
+    background-color: rgba(108, 50, 168, 0.5);
     box-shadow: 4px 3px 8px 0px rgba(237 12 245 / 22%);
     transition-duration: 0.3s;
     cursor: pointer;
@@ -69,6 +69,7 @@
         right: 0;
         margin: 0 auto;
         height: 172px;
+        
       }
     
       &-description {
@@ -91,6 +92,7 @@
     
       &-platforms {
         display: flex;
+        
       }
     
       &-platform {
