@@ -12,7 +12,21 @@ import { HttpService } from 'src/app/services/http.service';
 export class DetailsComponent implements OnInit, OnDestroy {
   gameRating = 0;
   gameId!: string;
-  game!: Game;
+  game: Game = {
+    background_image: '',
+    name: '',
+    released: '',
+    metacritic_url: '',
+    website: '',
+    description: '',
+    metacritic: 0,
+    genres: [],
+    parent_platforms: [],
+    publishers: [],
+    ratings: [],
+    screenshots: [],
+    trailers: []
+  };
   routeSub!: Subscription;
   gameSub!: Subscription;
 
@@ -31,10 +45,7 @@ export class DetailsComponent implements OnInit, OnDestroy {
 getGameDetails(id: string): void {
   this.gameSub = this.httpService.getGameDetails(id).subscribe((gameResp: Game) => {
     this.game = gameResp;
-
-    setTimeout(() => {
       this.gameRating = this.game?.metacritic ?? 0;
-    }, 1000);
   });
 }
 

@@ -2,7 +2,7 @@
     <div class="game-banner">
         <img
          class="game-banner-img"
-         src="https://media.rawg.io/media/resize/1920/-/screenshots/bc2/bc255e09533797521b2ff1e364113a0b.jpg"
+         [src]="game.background_image"
          alt="background image"
         />
     </div>
@@ -33,11 +33,12 @@
     <a
         class="game-gauge-label"
         target="_blank"
-        href="{{ game.metacritic_url }}"
+        [href]="game.metacritic_url"
        >Criticas</a
        >
 </div>
 </div>
+<app-game-tabs [game]="game"></app-game-tabs>
 </div>
 </div>
 </div>
