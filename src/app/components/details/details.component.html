@@ -1,8 +1,8 @@
 <div class="details">
     <div class="game-banner">
         <img
-         class="game-banner-img"
-         [src]="game.background_image"
+        *ngIf="game.background_image"
+        [src]="game.background_image"
          alt="background image"
         />
     </div>
@@ -10,9 +10,7 @@
     <div class="details-wrapper">
     <div class="game-header">
         <h1 class="game-header-title">{{ game.name }}</h1>
-        <h2 class="game-header-release-data">
-            Lançamento: {{ game.released | date }}
-        </h2>
+        <h2 class="game-header-release-data white-text">Lançamento: {{ game.released | date }}</h2>
     <p class="game-header-genres">
         <span *ngFor="let genre of game.genres; let last = last"
         >{{ genre.name }}<span *ngIf="!last">, </span></span 
@@ -33,8 +31,8 @@
     <a
         class="game-gauge-label"
         target="_blank"
-        [href]="game.metacritic_url"
-       >Criticas</a
+        href="{{ game.metacritic_url }}"
+       >Nota dos críticos</a
        >
 </div>
 </div>

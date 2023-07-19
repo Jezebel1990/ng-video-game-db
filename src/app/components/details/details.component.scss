@@ -24,6 +24,7 @@
         fill: #fff;
         font-weight: 700;
         font-size: 24px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
     }
   
@@ -35,12 +36,14 @@
       &-label {
         font-size: 20px;
         color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         position: relative;
         bottom: 60px;
       }
     }
   }
-  
+
+
   .game {
     &-banner {
       height: 442px;
@@ -65,8 +68,9 @@
         font-weight: 700;
         line-height: 70px;
         white-space: nowrap;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
-  
+      
       &-release-date {
         color: #fff;
         font-weight: 700;
@@ -75,7 +79,14 @@
       &-genres {
         color: #fff;
         font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
     }
+  }
+  
+  .white-text {
+    color: #fff; 
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   

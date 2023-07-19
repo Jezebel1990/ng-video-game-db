@@ -11,15 +11,15 @@
     <mat-option value="-added">Adicionado</mat-option>
     <mat-option value="-created">Origem</mat-option>
     <mat-option value="-updated">Atualizado</mat-option>
-    <mat-option value="-rating">Avaliação</mat-option>
-    <mat-option value="metacritic">Criticas</mat-option>
+    <mat-option value="-rating">Melhor avaliação</mat-option>
+    <mat-option value="metacritic">Nota dos críticos</mat-option>
     </mat-select>
 </mat-form-field>
 </div>
 
 <div class="games">
     <ng-container *ngFor="let game of games">
-        <div class="game">
+        <div class="game" (click)="openGameDetails(game.id)">
         <div class="game-thumb-container">
         <img 
             *ngIf="game.background_image"
@@ -38,7 +38,6 @@
         class="game-platform"
         [src]="'assets/images/platforms/' + gamePlatform.platform.slug + '.svg'"
         [alt]="gamePlatform.platform.slug"
-        
     />
 
    </div>

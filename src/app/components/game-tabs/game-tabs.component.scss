@@ -1,7 +1,7 @@
 .game {
 
     &-tabs {
-        background: rgb(63, 81 181 / 61%);
+        background: rgb(63 81 181 / 61%);
         color: #fff;
         text-align: left;
         padding: 10px;
@@ -11,7 +11,7 @@
             margin-bottom: 0;
         }
         &-link {
-            color:#fff;
+          color:#fff;
         }
 
         &-votes {
@@ -22,25 +22,24 @@
                 margin-left: 5px;
             }
         }
-
-        ::ng-deep .mat-tab-labels {
-            justify-content: center;
-        }
+ ::ng-deep .mat-tab-labels {
+    justify-content: center;
+     }
 
     }
-    &-votes {
-        &-up {
-            color: #5ee432;
-        }
-        &-down {
-            color: #ef4655;
-        }
+&-votes {
+    &-up {
+     color: #5ee432;
+    }
+    &-down {
+     color: #ef4655;
+    }
 
-        &-count {
-            margin-left: 5px;
-            margin-right: 10px;
-            vertical-align: super;
-        }
+&-count {
+    margin-left: 5px;
+    margin-right: 10px;
+    vertical-align: super;
+ }
     }
     &-description {
         padding: 20px;

@@ -20,8 +20,8 @@ export class HomeComponent implements OnInit, OnDestroy{
     private router: Router,
     private activatedRoute: ActivatedRoute) { }
 
-  ngOnInit(): void {
-this.routeSub = this.activatedRoute.params.subscribe((params: Params) => {
+ngOnInit(): void {
+  this.routeSub = this.activatedRoute.params.subscribe((params: Params) => {
     if (params['game-search']) {
       this.searchGames('metacrit', params['game-search']);
     } else {
@@ -40,7 +40,7 @@ searchGames(sort: string, search?: string ): void {
 }
 
 openGameDetails(id: string): void {
-  this.router.navigate(['details', id]);
+  this.router.navigate(['details',id]);
 }
 
 ngOnDestroy(): void {

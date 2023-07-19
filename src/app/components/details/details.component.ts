@@ -24,8 +24,7 @@ export class DetailsComponent implements OnInit, OnDestroy {
     parent_platforms: [],
     publishers: [],
     ratings: [],
-    screenshots: [],
-    trailers: []
+    id: '',
   };
   routeSub!: Subscription;
   gameSub!: Subscription;
