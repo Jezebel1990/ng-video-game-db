@@ -12,7 +12,7 @@ This project uses a public API to create a game database website. The project ha
 ## ⚙️ Technologies
  - [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
  - TypeScript;
- - JavaScript;
+ - HTML;
  - Scss;
 
 
